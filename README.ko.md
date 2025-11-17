@@ -70,7 +70,7 @@ function AvatarShowcase() {
 
 1.  **리포지토리 클론:**
     ```bash
-    git clone https://github.com/your-username/ss-tailwind-ui.git
+    git clone https://github.com/khs990704/TailwindCSS-Components.git
     cd ss-tailwind-ui
     ```
 

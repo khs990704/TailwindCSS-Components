@@ -70,7 +70,7 @@ To run the development environment and contribute to the project:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/ss-tailwind-ui.git
+    git clone https://github.com/khs990704/TailwindCSS-Components.git
     cd ss-tailwind-ui
     ```
 
