@@ -1,0 +1,145 @@
+@import "tailwindcss";
+@import 'src/styles/typography.pcss';
+
+
+@import "src/styles/reset.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+    .file-select__label::after {
+        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15' fill='none'><path d='M4.83752 2.03385L10.1018 7.29818L4.83752 12.5625' stroke='%23767676' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>")
+        no-repeat center/contain;
+        @apply content-[""] absolute top-1/2 right-[-2rem] translate-y-[-50%] w-[1.5rem] h-[1.5rem]
+    }
+
+    .logo__a::after {
+        @apply content-["Chat_AI"] absolute top-1/2 right-[2.1rem] translate-y-[-50%] mt-[0.4rem]
+        text-[#2970FF] font-['Poppins'] text-[11px] not-italic font-medium leading-[140%]
+        bg-[rgba(3,52,149,0.05)] rounded-[0.4rem] py-[0.4rem] px-[0.6rem];
+    }
+
+    .chat-message__ai .md {
+        font-family: 'Pretendard','Poppins',sans-serif;
+        @apply bg-white p-[1rem] rounded-[0.8rem] leading-[1.6] text-[#222] dark:bg-gray-900 dark:text-gray-300;
+    }
+    .chat-message__ai .md h2 {
+        @apply text-[1.8rem] font-bold my-[2rem] mb-[1rem] leading-[1.4];
+    }
+    .chat-message__ai .md h3 {
+        @apply text-[1.6rem] font-bold my-[2rem] mb-[1rem] leading-[1.4];
+    }
+    .chat-message__ai .md h4 {
+        @apply text-[1.4rem] font-[600] my-[1.6rem] mb-[1rem];
+    }
+    .chat-message__ai .md p {
+        @apply mb-[1rem];
+    }
+    .chat-message__ai .md hr {
+        @apply border-none border-t border-t-[#e5e7eb] my-[2rem] dark:border-t-gray-700;
+    }
+    .chat-message__ai .md ul {
+        @apply pl-[1.4rem] mb-[1rem];
+    }
+    .chat-message__ai .md li {
+        @apply mb-[1rem];
+    }
+    .chat-message__ai .md pre {
+        @apply bg-[#0f172a] text-[#e6eef8] p-[1rem] rounded-[6px] text-[0.9rem] overflow-x-auto relative;
+    }
+    .chat-message__ai .md :not(pre) > code {
+        @apply bg-[#f4f4f4] px-[0.4rem] py-[0.2rem] rounded-[4px] font-mono text-[0.95em] dark:bg-gray-700;
+    }
+    .chat-message__ai .md pre > code {
+        @apply bg-transparent p-0 rounded-none font-mono text-[1.2rem] block text-current;
+    }
+    .chat-message__ai .md pre > code[class*="language-"]::before {
+        content: attr(class);
+        @apply absolute right-[0.8rem] top-[0.6rem] text-[1.1rem] opacity-70 pointer-events-none bg-transparent text-current leading-none;
+    }
+    .chat-message__ai .md pre > code.language-python::before { content: "PY" }
+    .chat-message__ai .md pre > code.language-c::before { content: "C" }
+    .chat-message__ai .md pre > code.language-cpp::before { content: "CPP" }
+    .chat-message__ai .md pre > code.language-java::before { content: "JAVA" }
+    .chat-message__ai .md pre > code.language-javascript::before { content: "JAVASCRIPT" }
+    .chat-message__ai .md pre > code.language-js::before { content: "JS" }
+    .chat-message__ai .md pre > code.language-go::before { content: "GO" }
+    .chat-message__ai .md pre > code.language-ruby::before { content: "RUBY" }
+    .chat-message__ai .md pre > code.language-swift::before { content: "SWIFT" }
+    .chat-message__ai .md pre > code.language-rust::before { content: "RUST" }
+    .chat-message__ai .md pre > code.language-kotlin::before { content: "KOTLIN" }
+    .chat-message__ai .md pre > code.language-php::before { content: "PHP" }
+    .chat-message__ai .md pre > code.language-bash::before { content: "SH" }
+    .chat-message__ai .md pre > code.language-sql::before { content: "SQL" }
+    .chat-message__ai .md pre > code.language-html::before { content: "HTML" }
+    .chat-message__ai .md pre > code.language-json::before { content: "JSON" }
+    .chat-message__ai .md pre > code.language-xml::before { content: "XML" }
+    .chat-message__ai .md pre > code.language-yaml::before { content: "YAML" }
+    .chat-message__ai .md pre > code.language-markdown::before { content: "MD" }
+    .chat-message__ai .md pre > code.language-csv::before { content: "CSV" }
+    .chat-message__ai .md pre > code.language-latex::before { content: "LATEX" }
+    .chat-message__ai .md pre > code.language-toml::before { content: "TOML" }
+
+    .chat-message__ai .md blockquote {
+        @apply border-l-[4px] border-l-[#e5e7eb] pl-[1rem] text-[#555] my-[1rem] bg-[#fafafa] rounded-[4px] p-[1rem] dark:border-l-gray-600 dark:text-gray-400 dark:bg-gray-800;
+    }
+    .chat-message__ai .md ol {
+        @apply list-decimal list-outside ml-[1.2rem] pl-0;
+    }
+    .chat-message__ai .md ol li {
+        @apply mb-[0.5rem];
+    }
+    .chat-message__ai .md strong {
+        @apply font-bold;
+    }
+    .chat-main.is-scrolled .chat-main__shadow { @apply !opacity-100 !visible; }
+    .chat-main.show-scroll-btn .scroll-btn--bottom { @apply !opacity-100 !visible !pointer-events-auto; }
+
+    .loading-word::after {
+        @apply content-[""] absolute inset-0 z-[20]
+        bg-[linear-gradient(var(--lw-bg)_7%,transparent_27%,transparent_77%,var(--lw-bg)_92%)];
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-loading {
+    10% {
+        -webkit-transform: translateY(-102%);
+        transform: translateY(-102%);
+    }
+    25% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    35% {
+        -webkit-transform: translateY(-202%);
+        transform: translateY(-202%);
+    }
+    50% {
+        -webkit-transform: translateY(-200%);
+        transform: translateY(-200%);
+    }
+    60% {
+        -webkit-transform: translateY(-302%);
+        transform: translateY(-302%);
+    }
+    75% {
+        -webkit-transform: translateY(-300%);
+        transform: translateY(-300%);
+    }
+    85% {
+        -webkit-transform: translateY(-402%);
+        transform: translateY(-402%);
+    }
+    100% {
+        -webkit-transform: translateY(-400%);
+        transform: translateY(-400%);
+    }
+}
+
+@import "tailwindcss/utilities";

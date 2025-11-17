@@ -1,0 +1,79 @@
+@layer base {
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+
+    body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote, dl, dd {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul, ol {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    body {
+        font-family: "Pretendard", "SUITE", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.5;
+        background-color: #ffffff; /* Default light mode background */
+        color: #212121; /* Default light mode text color */
+    }
+
+    .dark body {
+        background-color: #1a202c; /* Dark mode background (e.g., gray-900) */
+        color: #ffffff; /* Dark mode text color */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Pretendard", "SUITE", sans-serif;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    strong, b {
+        font-weight: inherit;
+    }
+
+    em, i {
+        font-style: inherit;
+    }
+
+    button {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    input, textarea {
+        border: none;
+        outline: none;
+        appearance: none;
+        background: transparent;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+    }
+}
