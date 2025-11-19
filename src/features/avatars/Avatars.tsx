@@ -795,10 +795,87 @@ const Avatars = () => {
                         href="https://hskim.me"
                     />
                 </ListContent>
-                {/*<ListContent title="Grouped Icon Avatars">*/}
-                {/*</ListContent>*/}
-                {/*<ListContent title="Grouped Initial Avatars"></ListContent>*/}
-                {/*<ListContent title="Grouped Image Avatars"></ListContent>*/}
+                <ListContent title="Grouped Icon Avatars">
+                    <GroupAvatar
+                        to="top"
+                        space={2}
+                    >
+                        <Avatar
+                            shape="circular"
+                            size={10}
+                            type="icon"
+                            src="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"
+                        />
+                        <Avatar
+                            shape="rounded"
+                            size={10}
+                            type="icon"
+                            src="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"
+                        />
+                        <Avatar
+                            shape="circular"
+                            size={10}
+                            type="icon"
+                            src="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"
+                            status="offline"
+                            statusSize={3}
+                            locate="bottom"
+                        />
+                    </GroupAvatar>
+                </ListContent>
+                <ListContent title="Grouped Initial Avatars">
+                    <GroupAvatar>
+                        <Avatar
+                            shape="rounded"
+                            size={10}
+                            type="initial"
+                            text="TW"
+                            textSize="lg"
+                        />
+                        <Avatar
+                            shape="circular"
+                            size={10}
+                            type="initial"
+                            text="TW"
+                            textSize="lg"
+                        />
+                        <Avatar
+                            shape="rounded"
+                            size={10}
+                            type="initial"
+                            text="TW"
+                            textSize="lg"
+                            status="online"
+                            statusSize={3}
+                            locate="top"
+                        />
+                    </GroupAvatar>
+                </ListContent>
+                <ListContent title="Grouped Image Avatars">
+                    <GroupAvatar>
+                        <Avatar
+                            shape="circular"
+                            size={10}
+                            type="img"
+                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        />
+                        <Avatar
+                            shape="rounded"
+                            size={10}
+                            type="img"
+                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        />
+                        <Avatar
+                            shape="circular"
+                            size={10}
+                            type="img"
+                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            status="disable"
+                            statusSize={3}
+                            locate="bottom"
+                        />
+                    </GroupAvatar>
+                </ListContent>
             </List>
         </div>
     )

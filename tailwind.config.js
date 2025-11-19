@@ -24,6 +24,10 @@ export default {
         'size-18',
         'size-20',
         'size-22',
+        '-space-x-1',
+        '-space-x-2',
+        '-space-x-3',
+        '-space-x-4',
     ],
     plugins: [],
 }
