@@ -48,11 +48,15 @@ const InitialAvatar = ({
             </span>
             {caption !== '' && (
                 <div className="ml-3">
-                    <p className={`${captionSize} font-medium text-gray-700 group-hover:text-gray-900 dark:text-gray-300 group-hover:dark:text-white`}>
+                    <p
+                        className={`${captionSize} font-medium text-gray-700 group-hover:text-gray-900 dark:text-gray-300 group-hover:dark:text-white`}
+                    >
                         {caption}
                     </p>
                     {subCaption !== '' && (
-                        <p className={`${subCaptionSize} font-medium text-gray-500 group-hover:text-gray-700 dark:text-gray-400 group-hover:dark:text-gray-300`}>
+                        <p
+                            className={`${subCaptionSize} font-medium text-gray-500 group-hover:text-gray-700 dark:text-gray-400 group-hover:dark:text-gray-300`}
+                        >
                             {subCaption}
                         </p>
                     )}

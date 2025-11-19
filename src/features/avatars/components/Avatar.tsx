@@ -7,7 +7,7 @@ import { GroupAvatarContext } from 'src/features/avatars/components/avatarType/G
 const Avatar = ({
     shape = 'circular',
     size = 10,
-    type = 'initial',
+    type = 'icon',
     src = '',
     text = '',
     textSize = '',
@@ -72,13 +72,14 @@ const Avatar = ({
             />
         )
     }
-    if (type === 'icon') {
+    if (type === 'initial') {
         return (
-            <IconAvatar
+            <InitialAvatar
                 group={groupClass}
                 shape={shapeClass}
                 size={sizeClass}
-                src={src}
+                text={text}
+                textSize={textSizeClass}
                 status={statusClass}
                 statusSize={statusSizeClass}
                 locate={locateClass}
@@ -91,12 +92,11 @@ const Avatar = ({
         )
     }
     return (
-        <InitialAvatar
+        <IconAvatar
             group={groupClass}
             shape={shapeClass}
             size={sizeClass}
-            text={text}
-            textSize={textSizeClass}
+            src={src}
             status={statusClass}
             statusSize={statusSizeClass}
             locate={locateClass}

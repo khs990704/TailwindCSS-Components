@@ -348,7 +348,7 @@ const Avatars = () => {
                         size={10}
                         type="initial"
                         text="TW"
-                        textSize="medium"
+                        textSize="lg"
                     />
                     <Avatar
                         shape="circular"
@@ -540,30 +540,265 @@ const Avatars = () => {
                         href="https://hskim.me"
                     />
                 </ListContent>
-                <ListContent title="Avatar">
+                <ListContent title="Basic Icon Single Avatar">
                     <Avatar
-                        size={16}
-                        type="icon"
+                        shape="circular"
+                        size={8}
                         src="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"
-                        status="online"
-                        statusSize={4}
+                        type="icon"
                     />
                     <Avatar
-                        size={16}
-                        type="img"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        shape="rounded"
+                        size={8}
+                        src="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"
+                        type="icon"
+                    />
+                    <Avatar
+                        shape="circular"
+                        size={8}
+                        src="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"
+                        type="icon"
+                        status="offline"
+                        statusSize={2}
+                        locate="bottom"
+                    />
+                    <Avatar
+                        shape="rounded"
+                        size={8}
+                        src="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"
+                        type="icon"
+                        status="disable"
+                        statusSize={2}
+                        locate="bottom"
+                    />
+                    <Avatar
+                        shape="circular"
+                        size={8}
+                        src="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"
+                        type="icon"
                         status="online"
-                        statusSize={4}
+                        statusSize={2}
+                        locate="bottom"
+                    />
+                    <Avatar
+                        shape="rounded"
+                        size={8}
+                        src="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"
+                        type="icon"
+                        status="offline"
+                        statusSize={2}
+                        locate="top"
+                    />
+                    <Avatar
+                        shape="circular"
+                        size={8}
+                        src="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"
+                        type="icon"
+                        status="disable"
+                        statusSize={2}
+                        locate="top"
+                    />
+                    <Avatar
+                        shape="rounded"
+                        size={8}
+                        src="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"
+                        type="icon"
+                        status="online"
+                        statusSize={2}
+                        locate="top"
+                    />
+                    <Avatar
+                        shape="circular"
+                        size={8}
+                        src="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"
+                        type="icon"
+                        status="online"
+                        statusSize={2}
+                        locate="bottom"
+                        caption="Icon"
+                        captionSize="sm"
+                        subCaption="test"
+                        subCaptionSize="xs"
                         href="https://hskim.me"
                     />
+                </ListContent>
+                <ListContent title="Basic Initial Single Avatar">
                     <Avatar
-                        size={16}
+                        shape="circular"
+                        size={8}
+                        type="initial"
                         text="HS"
-                        // textSize="2xl"
+                        textSize="base"
+                    />
+                    <Avatar
+                        shape="rounded"
+                        size={8}
+                        type="initial"
+                        text="HS"
+                        textSize="base"
+                    />
+                    <Avatar
+                        shape="rounded"
+                        size={8}
+                        type="initial"
+                        text="HS"
+                        textSize="base"
+                        status="offline"
+                        statusSize={2}
+                        locate="bottom"
+                    />
+                    <Avatar
+                        shape="circular"
+                        size={8}
+                        type="initial"
+                        text="HS"
+                        textSize="base"
                         status="disable"
-                        statusSize={4}
+                        statusSize={2}
+                        locate="bottom"
+                    />
+                    <Avatar
+                        shape="rounded"
+                        size={8}
+                        type="initial"
+                        text="HS"
+                        textSize="base"
+                        status="online"
+                        statusSize={2}
+                        locate="bottom"
+                    />
+                    <Avatar
+                        shape="circular"
+                        size={8}
+                        type="initial"
+                        text="HS"
+                        textSize="base"
+                        status="offline"
+                        statusSize={2}
+                        locate="top"
+                    />
+                    <Avatar
+                        shape="rounded"
+                        size={8}
+                        type="initial"
+                        text="HS"
+                        textSize="base"
+                        status="disable"
+                        statusSize={2}
+                        locate="top"
+                    />
+                    <Avatar
+                        shape="circular"
+                        size={8}
+                        type="initial"
+                        text="HS"
+                        textSize="base"
+                        status="online"
+                        statusSize={2}
+                        locate="top"
+                    />
+                    <Avatar
+                        shape="rounded"
+                        size={8}
+                        type="initial"
+                        text="HS"
+                        textSize="base"
+                        status="offline"
+                        statusSize={2}
+                        locate="top"
+                        caption="Initial"
+                        captionSize="sm"
+                        subCaption="test"
+                        subCaptionSize="xs"
+                        href="https://hskim.me"
                     />
                 </ListContent>
+                <ListContent title="Basic Image Single Avatar">
+                    <Avatar
+                        shape="circular"
+                        size={8}
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        type="img"
+                    />
+                    <Avatar
+                        shape="rounded"
+                        size={8}
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        type="img"
+                    />
+                    <Avatar
+                        shape="circular"
+                        size={8}
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        type="img"
+                        status="offline"
+                        statusSize={2}
+                        locate="bottom"
+                    />
+                    <Avatar
+                        shape="rounded"
+                        size={8}
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        type="img"
+                        status="disable"
+                        statusSize={2}
+                        locate="bottom"
+                    />
+                    <Avatar
+                        shape="circular"
+                        size={8}
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        type="img"
+                        status="online"
+                        statusSize={2}
+                        locate="bottom"
+                    />
+                    <Avatar
+                        shape="rounded"
+                        size={8}
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        type="img"
+                        status="offline"
+                        statusSize={2}
+                        locate="top"
+                    />
+                    <Avatar
+                        shape="circular"
+                        size={8}
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        type="img"
+                        status="disable"
+                        statusSize={2}
+                        locate="top"
+                    />
+                    <Avatar
+                        shape="rounded"
+                        size={8}
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        type="img"
+                        status="online"
+                        statusSize={2}
+                        locate="top"
+                    />
+                    <Avatar
+                        shape="circular"
+                        size={8}
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        type="img"
+                        status="disable"
+                        statusSize={2}
+                        locate="bottom"
+                        caption="Image"
+                        captionSize="sm"
+                        subCaption="test"
+                        subCaptionSize="xs"
+                        href="https://hskim.me"
+                    />
+                </ListContent>
+                {/*<ListContent title="Grouped Icon Avatars">*/}
+                {/*</ListContent>*/}
+                {/*<ListContent title="Grouped Initial Avatars"></ListContent>*/}
+                {/*<ListContent title="Grouped Image Avatars"></ListContent>*/}
             </List>
         </div>
     )
